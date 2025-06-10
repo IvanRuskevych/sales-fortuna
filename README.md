@@ -1,54 +1,69 @@
-# React + TypeScript + Vite
+# Sales Fortuna
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🧩 Project Overview
 
-Currently, two official plugins are available:
+Sales Fortuna is a UI section that displays client testimonials in a responsive and interactive slider. It is designed
+using modern frontend technologies like Swiper for carousel functionality and follows the Feature-Sliced Design (FSD)
+architecture for scalable and maintainable code organization.
+![img.png](img.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Technologies Used
 
-## Expanding the ESLint configuration
+- React 19
+- TypeScript
+- Vite — fast development environment
+- Swiper — for slider/carousel functionality
+- FSD (Feature-Sliced Design) — modular project structure
+- SASS — for styling
+- ESLint — for code linting
+- Cloudinary — image hosting
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📁 Project Structure (FSD)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+The project follows the FSD (Feature-Sliced Design) structure:
+
+- `entities/` — core reusable entities
+- `features/` — individual logic or business features
+- `shared/` — common components, styles, helpers
+- `widgets/` — composable UI blocks (e.g., testimonial slider)
+- `pages/` — application pages
+
+This modular design improves maintainability and scalability.
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/sales-fortuna.git
+cd sales-fortuna
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+Create a `.env` file in the root directory:
+
+```
+VITE_CLOUDINARY_CLOUD_NAME=your_cloud_name
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Open in browser: http://localhost:5173
+
+## ✅ Features
+
+- Displays customer testimonials with images, names, companies, and roles
+- Swiper-based navigation (buttons & swipe support)
+- Responsive and accessible design
+- Structured and scalable with FSD principles
+- Pixel perfect implementation matching design mockups
+

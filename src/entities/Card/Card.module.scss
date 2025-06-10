@@ -1,11 +1,12 @@
-@use "/src/styles/variables" as *;
+@use "/src/shared/styles/variables" as *;
 
 .card {
   padding: 20px 30px;
-  width: 380px;
-  height: 502px;
+  max-width: 380px;
+  min-height: 502px;
   border: 1px solid $gray-500;
   border-radius: 12px;
+  background-color: #fff;
 }
 
 .cardLogo {
@@ -49,10 +50,6 @@
 
 .cardClientName {
   font-weight: 700;
-}
-
-.cardClientTitle {
-  color: $gray-500;
 }
 
 
