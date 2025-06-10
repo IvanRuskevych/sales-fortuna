@@ -5,7 +5,18 @@
 Sales Fortuna is a UI section that displays client testimonials in a responsive and interactive slider. It is designed
 using modern frontend technologies like Swiper for carousel functionality and follows the Feature-Sliced Design (FSD)
 architecture for scalable and maintainable code organization.
-![img.png](img.png)
+![img.png](docs/main-img.png)
+
+---
+
+## Project Deployment
+
+The project is deployed on the [Vercel](https://vercel.com) platform.  
+To view the live production version of the app, please visit:
+
+➡️ **[Go to the Vercel deployment](https://sales-fortuna.vercel.app/)**
+
+---
 
 ## 🔧 Technologies Used
 
@@ -18,6 +29,8 @@ architecture for scalable and maintainable code organization.
 - ESLint — for code linting
 - Cloudinary — image hosting
 
+---
+
 ## 📁 Project Structure (FSD)
 
 The project follows the FSD (Feature-Sliced Design) structure:
@@ -29,6 +42,8 @@ The project follows the FSD (Feature-Sliced Design) structure:
 - `pages/` — application pages
 
 This modular design improves maintainability and scalability.
+
+---
 
 ## 🚀 Getting Started
 
@@ -59,6 +74,8 @@ npm run dev
 
 Open in browser: http://localhost:5173
 
+---
+
 ## ✅ Features
 
 - Displays customer testimonials with images, names, companies, and roles
@@ -67,3 +84,17 @@ Open in browser: http://localhost:5173
 - Structured and scalable with FSD principles
 - Pixel perfect implementation matching design mockups
 
+---
+
+## ✅ Lighthouse Audit Results
+
+To ensure high quality of the application, an audit was performed using Lighthouse. The audit covered the following
+categories:
+
+- Performance
+- Accessibility
+- Best Practices
+- SEO
+
+Below are screenshots of the audit results:
+![img.png](docs/audit-img.png)
