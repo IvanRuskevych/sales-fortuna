@@ -1,0 +1,17 @@
+@use "/src/styles/variables" as *;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  height: 68px;
+  border: 1px solid $gray-300;
+  border-radius: 50%;
+
+
+}
+
+.icon {
+  fill: $gray-700;
+}
