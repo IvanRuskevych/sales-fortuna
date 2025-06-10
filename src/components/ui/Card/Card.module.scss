@@ -1,0 +1,60 @@
+@use "/src/styles/variables" as *;
+
+.card {
+  padding: 20px 30px;
+  width: 380px;
+  height: 502px;
+  border: 1px solid $gray-500;
+  border-radius: 12px;
+}
+
+.cardLogo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 120px;
+}
+
+.cardText {
+  color: $gray-600;
+}
+
+.cardQuoteMark {
+  font-family: Staatliches, sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 0.3646;
+  text-align: end;
+  color: $gray-400;
+}
+
+.cardClient {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.cardClientAvatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cardClientInfo {
+  width: 100%;
+}
+
+.cardClientName {
+  font-weight: 700;
+}
+
+.cardClientTitle {
+  color: $gray-500;
+}
+
+
+
+
