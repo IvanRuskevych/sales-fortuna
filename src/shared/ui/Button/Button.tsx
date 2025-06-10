@@ -6,18 +6,18 @@ import styles from "./Button.module.scss";
 interface ButtonProps {
     onClick?: () => void;
     disabled?: boolean;
-    iconType?: "left" | "right";
+    iconType?: "prev" | "next";
 }
 
-export const Button = ({onClick, disabled, iconType = "left"}: ButtonProps) => {
+export const Button = ({onClick, disabled, iconType = "prev"}: ButtonProps) => {
     return (
         <button
             onClick={onClick}
             disabled={disabled}
             className={styles.wrapper}
-            aria-label={iconType === "left" ? "Previous" : "Next"}
+            aria-label={iconType === "prev" ? "Previous" : "Next"}
         >
-            {iconType === "left" ? (
+            {iconType === "prev" ? (
                 <ChevronLeftIcon className={styles.icon} />
             ) : (
                 <ChevronRightIcon className={styles.icon} />

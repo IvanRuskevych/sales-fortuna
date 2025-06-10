@@ -1,0 +1,47 @@
+@use "/src/shared/styles/variables" as *;
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 96px 67px;
+  max-width: 1360px;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navLeft,
+.navRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navLeft {
+  left: 0;
+}
+
+.navRight {
+  right: 0;
+}
+
+// Update swiper styles
+:global {
+  .swiper {
+    position: unset;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: $gray-200;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $gray-900;
+  }
+}
+
+
